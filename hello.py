@@ -24,3 +24,7 @@ def hello_world():
 @app.route('/username/<name>')
 def bye_world(name):
     return f'Hello {name}.'
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
