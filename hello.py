@@ -18,3 +18,9 @@ I think I did it just for my user. still risky though...
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
+
+
+#below uses <name> from the url as the variable so whatever you pass into the url will be used in the function
+@app.route('/username/<name>')
+def bye_world(name):
+    return f'Hello {name}.'
